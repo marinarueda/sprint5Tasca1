@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Listado de Sucursales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Listado de Sucursales</h1>
+<div class="btn-container">
+    <a href="add.html" class="btn btn-primary">Nueva Sucursal</a>
+    <a href="getOne.html" class="btn btn-info">Buscar Sucursal</a>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>País</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Sucursal 1</td>
+        <td>País 1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sucursal 2</td>
+        <td>País 2</td>
+    </tr>
+    <!-- Agrega más filas según sea necesario -->
+    <tr th:each="sucursal : ${sucursals}">
+        <td th:text="${sucursal.pk_SucursalID}"></td>
+        <td th:text="${sucursal.nomSucursal}"></td>
+        <td th:text="${sucursal.paisSucursal}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+

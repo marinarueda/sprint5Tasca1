@@ -1,8 +1,8 @@
-package model.services;
+package cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.services;
 
-import model.repository.SucursalRepository;
-import model.domain.Sucursal;
-import model.dto.SucursalDTO;
+import cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.domain.Sucursal;
+import cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.dto.SucursalDTO;
+import cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.repository.SucursalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

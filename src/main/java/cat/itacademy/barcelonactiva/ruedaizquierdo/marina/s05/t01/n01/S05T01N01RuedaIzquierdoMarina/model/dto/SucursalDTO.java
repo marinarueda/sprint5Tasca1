@@ -1,4 +1,4 @@
-package model.dto;
+package cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.dto;
 
 public class SucursalDTO {
     private Integer pk_SucursalID;

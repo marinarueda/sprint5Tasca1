@@ -1,7 +1,7 @@
-package model.repository;
+package cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.repository;
 
+import cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.domain.Sucursal;
 import org.springframework.data.jpa.repository.JpaRepository;
-import model.domain.Sucursal;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

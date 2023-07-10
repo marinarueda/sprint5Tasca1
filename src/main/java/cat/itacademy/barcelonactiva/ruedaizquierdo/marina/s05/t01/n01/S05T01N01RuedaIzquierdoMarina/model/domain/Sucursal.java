@@ -1,4 +1,4 @@
-package model.domain;
+package cat.itacademy.barcelonactiva.ruedaizquierdo.marina.s05.t01.n01.S05T01N01RuedaIzquierdoMarina.model.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
